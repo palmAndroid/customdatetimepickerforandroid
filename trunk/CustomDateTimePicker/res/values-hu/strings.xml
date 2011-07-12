@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, DatePickerGalleryActivity!</string>
+	<string name="app_name">DatePickerGallery</string>
+
+	<string-array name="months">
+		<item>Január</item>
+		<item>Február</item>
+		<item>Március</item>
+		<item>Aprilis</item>
+		<item>Május</item>
+		<item>Június</item>
+		<item>Július</item>
+		<item>Augusztus</item>
+		<item>Szeptember</item>
+		<item>Október</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+</resources>

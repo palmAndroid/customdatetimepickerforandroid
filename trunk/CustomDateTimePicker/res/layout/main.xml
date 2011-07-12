@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center">
+	<Gallery android:id="@+id/GalleryYear" android:layout_width="250dip"
+		android:layout_height="70dip" android:layout_marginBottom="10dip"
+		android:background="@drawable/slider_back" android:spacing="20dip"
+		android:fadingEdge="vertical" android:fadingEdgeLength="50dip"
+		android:unselectedAlpha="0.2"></Gallery>
+
+	<Gallery android:id="@+id/GalleryMonth" android:layout_width="250dip"
+		android:layout_height="70dip" android:layout_marginBottom="10dip"
+		android:background="@drawable/slider_back" android:spacing="20dip"
+		android:fadingEdge="vertical" android:fadingEdgeLength="50dip"
+		android:unselectedAlpha="0.2"></Gallery>
+
+
+	<Gallery android:id="@+id/GalleryDay" android:layout_width="250dip"
+		android:layout_height="70dip" android:layout_marginBottom="10dip"
+		android:background="@drawable/slider_back" android:spacing="20dip"
+		android:fadingEdge="vertical" android:fadingEdgeLength="50dip"
+		android:unselectedAlpha="0.2"></Gallery>
+	<Gallery android:id="@+id/GalleryHour" android:fadingEdgeLength="50dip" android:layout_width="200dip" android:fadingEdge="vertical" android:spacing="20dip" android:layout_height="70dip" android:background="@drawable/slider_back" android:layout_marginBottom="10dip" android:unselectedAlpha="0.2"></Gallery>
+	<Gallery android:id="@+id/GalleryMinute" android:fadingEdgeLength="50dip" android:layout_width="200dip" android:fadingEdge="vertical" android:spacing="20dip" android:layout_height="70dip" android:background="@drawable/slider_back" android:layout_marginBottom="10dip" android:unselectedAlpha="0.2"></Gallery>
+
+</LinearLayout>
