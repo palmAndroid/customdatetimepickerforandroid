@@ -12,7 +12,7 @@ import android.widget.Gallery;
 import com.helloandroid.customdatetimepicker.bo.DayMonthYear;
 import com.helloandroid.customdatetimepicker.bo.HourMinute;
 
-public class CustomDateTimeHelper {
+public class CustomDateTimePickerHelper {
 
 	private Context mContext;
 
@@ -26,7 +26,7 @@ public class CustomDateTimeHelper {
 	 * 
 	 * @param context
 	 */
-	public CustomDateTimeHelper(Context context) {
+	public CustomDateTimePickerHelper(Context context) {
 		mContext = context;
 	}
 

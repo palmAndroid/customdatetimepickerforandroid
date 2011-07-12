@@ -10,12 +10,12 @@ import android.widget.Gallery;
 
 import com.helloandroid.customdatetimepicker.bo.DayMonthYear;
 import com.helloandroid.customdatetimepicker.bo.HourMinute;
-import com.helloandroid.customdatetimepicker.utils.CustomDateTimeHelper;
+import com.helloandroid.customdatetimepicker.utils.CustomDateTimePickerHelper;
 import com.helloandroid.datepickergallery.R;
 
-public class DatePickerGalleryActivity extends Activity {
+public class CustomDateTimePickerActivity extends Activity {
 
-	CustomDateTimeHelper CustomDateGallery;
+	CustomDateTimePickerHelper CustomDateGallery;
 	DayMonthYear galleryHolderDayMonthYear;
 
 	/** Called when the activity is first created. */
@@ -24,7 +24,7 @@ public class DatePickerGalleryActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		CustomDateTimeHelper customPickerGallery = new CustomDateTimeHelper(getApplicationContext());
+		CustomDateTimePickerHelper customDateTimePickerHelper = new CustomDateTimePickerHelper(getApplicationContext());
 
 		// year month date holder object
 		// you could also use seperate Gallery objects if you like
@@ -32,13 +32,13 @@ public class DatePickerGalleryActivity extends Activity {
 		galleryHolderDayMonthYear.mDay = (Gallery) findViewById(R.id.GalleryDay);
 		galleryHolderDayMonthYear.mMonth = (Gallery) findViewById(R.id.GalleryMonth);
 		galleryHolderDayMonthYear.mYear = (Gallery) findViewById(R.id.GalleryYear);
-		galleryHolderDayMonthYear = customPickerGallery.getYearMonthDay(galleryHolderDayMonthYear, R.layout.galleryitem, R.id.datepickergallery_textView, 1);
+		galleryHolderDayMonthYear = customDateTimePickerHelper.getYearMonthDay(galleryHolderDayMonthYear, R.layout.galleryitem, R.id.datepickergallery_textView, 1);
 
 		// hour minute
 		HourMinute galleryHolderHourMinute = new HourMinute();
 		galleryHolderHourMinute.mHour = (Gallery) findViewById(R.id.GalleryHour);
 		galleryHolderHourMinute.mMinute = (Gallery) findViewById(R.id.GalleryMinute);
-		galleryHolderHourMinute = customPickerGallery.getHourMinute(galleryHolderHourMinute, R.layout.galleryitem, R.id.datepickergallery_textView);
+		galleryHolderHourMinute = customDateTimePickerHelper.getHourMinute(galleryHolderHourMinute, R.layout.galleryitem, R.id.datepickergallery_textView);
 
 		// you can use any Gallery related built in method
 		galleryHolderDayMonthYear.mMonth.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -59,13 +59,13 @@ public class DatePickerGalleryActivity extends Activity {
 		/**
 		 * Helper method for getting date in a String
 		 */
-		Log.d("Hour and minute: ", customPickerGallery.getHourMinute(galleryHolderHourMinute));
+		Log.d("Hour and minute: ", customDateTimePickerHelper.getHourMinute(galleryHolderHourMinute));
 
 		
 		/**
 		 * Helper method for gettin hour and minute in String
 		 */
-		Log.d("Year month day: ", customPickerGallery.getYearMonthDay(galleryHolderDayMonthYear));
+		Log.d("Year month day: ", customDateTimePickerHelper.getYearMonthDay(galleryHolderDayMonthYear));
 
 	}
 }
